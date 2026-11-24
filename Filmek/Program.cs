@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Filmek
 {
-    public static List<Film> filmek = new List<Film>();
+    public static List<Film.Mode> filmek = new List<Film.Mode>();
     internal class Program
     {
         static void Main(string[] args)
