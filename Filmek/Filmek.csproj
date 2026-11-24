@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Film.cs" />
+    <Compile Include="Model\Fizetes.cs" />
+    <Compile Include="Model\Jegy.cs" />
+    <Compile Include="Model\Mozi.cs" />
+    <Compile Include="Model\Szek.cs" />
+    <Compile Include="Model\Terem.cs" />
+    <Compile Include="Model\Vasarlo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

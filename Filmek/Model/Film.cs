@@ -8,29 +8,28 @@ namespace Filmek.Model
 {
     public abstract class Film
     {
-        private string cim;
-        private string hossz;
-        private string rendezo;
-        private int megjelenesEv;
-        private int ertekeles;
+        private static string cim;
+        private static int hossz;
+        private static int korhatar;
+        private static string mufaj;
 
-        protected Film(string cim, string hossz, string rendezo, int megjelenesEv, int ertekeles)
-        {
-            this.cim = cim;
-            this.hossz = hossz;
-            this.rendezo = rendezo;
-            this.megjelenesEv = megjelenesEv;
-            this.ertekeles = ertekeles;
-        }
 
         public string Cim { get => cim; set => cim = value; }
-        public string Hossz { get => hossz; set => hossz = value; }
-        public string Rendezo { get => rendezo; set => rendezo = value; }
-        public int MegjelenesEv { get => megjelenesEv; set => megjelenesEv = value; }
-        public int Ertekeles { get => ertekeles; set => ertekeles = value; }
+        public int Hossz { get => hossz; set => hossz = value; }
+        public int Korhatar { get => korhatar; set => korhatar = value; }
+        public string Mufaj { get => mufaj; set => mufaj = value; }
 
+        public Film(string cim, int hossz, int korhatar, string mufaj)
+        {
+            this.Cim = cim;
+            this.Hossz = hossz;
+            this.Korhatar = korhatar;
+            this.Mufaj = mufaj;
+        }
+ 
 
+       
 
-        public abstract string FilmInfo();
+        public abstract void FilmInfo();
     }
 }
